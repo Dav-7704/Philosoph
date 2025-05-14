@@ -1,0 +1,225 @@
+.gentium-plus-regular {
+    font-family: "Gentium Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .gentium-plus-bold {
+    font-family: "Gentium Plus", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .gentium-plus-regular-italic {
+    font-family: "Gentium Plus", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .gentium-plus-bold-italic {
+    font-family: "Gentium Plus", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+/* Основные стили */
+body {
+    font-family: 'Gentium Plus', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    line-height: 1.8;
+    background-image: url('images/greek-pattern.jpg'); /* Фоновое изображение */
+    background-size: cover;
+    background-attachment: fixed;
+ /* Увеличиваем размер шрифта для всего сайта */
+}
+
+
+/* Фиксированная шапка */
+header {
+    background-color: #000000; /* Полностью непрозрачный чёрный цвет */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37; /* Золотая граница */
+    position: fixed; /* Фиксированное положение */
+    top: 0; /* Прижимаем к верхнему краю */
+    left: 0; /* Прижимаем к левому краю */
+    width: 100%; /* Ширина на весь экран */
+    z-index: 1000; /* Чтобы шапка была поверх других элементов */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #d4af37; /* Золотой цвет */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    animation: glow 3s infinite;
+    padding: 10px 20px; /* Внутренний отступ */
+    border: 2px solid #d4af37; /* Рамка */
+    border-radius: 50px; /* Овальная форма */
+    background-color: rgba(0, 0, 0, 0.5); /* Фон для текста */
+}
+
+/* Навигация */
+nav {
+    margin-right: 40px; /* Сдвигаем навигацию вправо */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+li{
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #d4af37;
+}
+
+/* Основной контент */
+main {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 100px auto 20px; /* Отступ сверху для шапки */
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+h1, h2 {
+    color: #d4af37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
+
+/* Цитаты */
+blockquote {
+    font-style: italic;
+    color: #d4af37;
+    border-left: 4px solid #d4af37;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* Изображения */
+img {
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+    max-width: 100%;
+    height: auto;
+}
+
+/* Подвал */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #d4af37;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #d4af37;
+}
+
+/* Анимации */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #d4af37;
+    }
+    50% {
+        text-shadow: 0 0 20px #d4af37;
+    }
+    100% {
+        text-shadow: 0 0 10px #d4af37;
+    }
+}
+
+h1 {
+    animation: glow 3s infinite;
+}
+
+/* Анимация для появления страницы */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Анимация для исчезновения страницы */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Применение анимации к body */
+body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Класс для исчезновения страницы */
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+h1, h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Стили для списка цитат */
+.quotes-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quotes-list li {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #d4af37;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quotes-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+
+.quotes-list li em {
+    font-style: italic;
+    color: #d4af37;
+}
